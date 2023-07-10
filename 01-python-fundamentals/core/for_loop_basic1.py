@@ -41,6 +41,7 @@ for i in range(2018,0,-4):
 
 #flexible counter
 
+"""
 def multiples(lownum,highnum,mult):
     for i in range(lownum,highnum+1):
         if i%mult ==0:
@@ -48,4 +49,4 @@ def multiples(lownum,highnum,mult):
     return None
 
 multiples(2,17,5)
-
+"""
