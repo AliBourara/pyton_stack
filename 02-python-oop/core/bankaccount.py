@@ -30,8 +30,9 @@ class BankAccount:
     @classmethod
     def bank_info(cls):
         for bank_account in cls.all_instances:
-            #print(bank_account.display_account_info())
-            print(f"balance : {bank_account.balance} interest : {bank_account.int_rate}")
+            bank_account.display_account_info()
+
+        return None
 
 
 
