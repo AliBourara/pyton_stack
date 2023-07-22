@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="card text-white bg-dark p-4 " style="width: 32rem; margin-top: 4rem;">
+            <div class="card-body">
+                <h1 class="card-title mb-4 text-warning">Dojo Survey</h1>
+                <form action="/process" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="name" class="form-control" name="name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Dojo Locations</label>
+                        <select class="form-select" name="location">
+                            <option selected>Choose...</option>
+                            <option value="Tokyo">Tokyo</option>
+                            <option value="Tunis">Tunis</option>
+                            <option value="NewYork">NewYork</option>
+                        </select>
+                    </div>
+                    <!-- <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Favorite Language</label>
+                        <select class="form-select" name="fav_lang">
+                            <option selected>Choose...</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="C++">C++</option>
+                            <option value="C#">C#</option>
+                            <option value="Java">Java</option>
+                        </select>
+                    </div> -->
+                    <fieldset>
+                        <legend>Grade</legend>
+                        <div>
+                            <input type="radio" id="ninja" name="grade" value="Ninja" checked>
+                            <label for="ninja">Ninja</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dewey" name="grade" value="Sempai">
+                            <label for="Sempai">Sempai</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="louie" name="grade" value="Seinsei">
+                            <label for="Seinsei">Seinsei</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Favorite Languages</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="fav_lang" value="JavaScript" checked>
+                        <label class="form-check-label" for="inlineCheckbox1">JavaScript</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="fav_lang" value="Python">
+                        <label class="form-check-label" for="inlineCheckbox2">Python</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="fav_lang" value="C++">
+                        <label class="form-check-label" for="inlineCheckbox2">C++</label>
+                    </div> 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="fav_lang" value="C#">
+                        <label class="form-check-label" for="inlineCheckbox2">C#</label>
+                    </div> 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="fav_lang" value="Java">
+                        <label class="form-check-label" for="inlineCheckbox2">Java</label>
+                    </div> 
+                    </fieldset>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            name="comments"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
